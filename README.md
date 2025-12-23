@@ -121,6 +121,30 @@ and then run the tests:
 ./tests
 ```
 
+---
+
+For the sections below, only minimal work has been done, as opposed to propositional and first-order logics above.
+
+## Linear Temporal Logic (LTL)
+
+<img src="images_for_README/LTL.jpg" width="500" height="300" alt="Temporal Operators">
+
+```
+ocamlc -o ltl LTL.ml && ./ltl
+```
+
+## Fuzzy Logic
+
+```
+ocamlc -o fuzzy fuzzy_logic.ml && ./fuzzy
+```
+
+## Term Rewriting
+
+```
+ocamlc -o term_rewriting term_rewriting.ml && ./term_rewriting
+```
+
 ## Bonus: Beta Reduction from Lambda Calculus
 
 <img src="images_for_README/BetaReduction.jpg" width="500" height="300" alt="Beta Reduction">
