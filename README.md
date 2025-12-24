@@ -2,7 +2,7 @@
 
 [![OCaml](https://img.shields.io/badge/ocaml-5.3.0-orange.svg)](https://ocaml.org/releases/ocaml-5.3.html)
 
-Implementation of selected concepts from propositional logic, first-order logic, logic programming, probabilistic logic programming, and fuzzy logic programming. 
+Implementation of Selected Concepts from Propositional Logic, First-Order Logic, Logic Programming, Linear Temporal Logic, Fuzzy Logic and Term Rewriting.  
 
 
 ### Definitions and AUX Modules
@@ -123,11 +123,12 @@ and then run the tests:
 
 ---
 
-For the sections below, only minimal work has been done, as opposed to propositional and first-order logics above.
+For the sections below, only minimal work has been done, unlike the propositional and first-order logics above. After this point, I was tired of avoiding name collisions with `definitions.ml` for every program I added, so the files now self-include the definitions.
+
 
 ## Linear Temporal Logic (LTL)
 
-<img src="images_for_README/LTL.jpg" width="500" height="300" alt="Temporal Operators">
+<img src="images_for_README/LTL.png" width="500" height="300" alt="Temporal Operators">
 
 ```
 ocamlc -o ltl LTL.ml && ./ltl
@@ -140,6 +141,10 @@ ocamlc -o fuzzy fuzzy_logic.ml && ./fuzzy
 ```
 
 ## Term Rewriting
+
+<img src="images_for_README/lexicographic_path_order.png" width="500" height="300" alt="Lexicographic Path Order">
+
+<img src="images_for_README/Knuth-Bendix_order.png" width="500" height="300" alt="Knuth-Bendix Order">
 
 ```
 ocamlc -o term_rewriting term_rewriting.ml && ./term_rewriting
